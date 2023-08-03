@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif&family=Playfair+Display:ital@1&family=Roboto+Mono&family=Special+Elite&family=Zilla+Slab&display=swap');
+
+html {
+  font-family: Noto Serif, serif;
+  font-size: 10px;
+  font-weight: 150;
+  color: black;
+  background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4NjUwODQ3LWltYWdlLWpvYjYzMC1hXzIuanBn.jpg);
+}
+
+body {
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 70vw;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    max-width: 700px;
+  }
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+.subtitle {
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 2rem;
+  margin-top: 0rem;
+  color: black;
+}
+
+h2 {
+  font-family: cursive;
+  font-size: 3rem;
+  margin: 5rem 0 2.5rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 3rem 0 1.8rem 0;
+  color: black;
+}
+
+section {
+  text-align: left;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: 40rem;
+  margin: 0 auto;
+  border-radius: 2.5rem;
+}
+
+#img-caption {
+  font-family: Noto Sans JP, sans-serif;
+  margin-top: 2rem;
+}
+
+blockquote {
+  font-family: Special Elite, sans-serif;
+  font-size: 2.25rem;
+  background-color: ghostwhite;
+  margin: 3rem 3% 0 3%;
+  padding: 1rem 0% 2rem 0%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 2.5rem;
+  background: url(https://i.pinimg.com/originals/10/f9/44/10f944389ace361ae00a3fc6b7b16e9e.jpg);
+}
+
+cite {
+  font-family: Noto Sans JP, sans-serif;
+  font-size: 1.6rem;
+}
+
+.source-image {
+  width: 20rem;
+  height: 10rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  margin: 0 1rem 5rem 1rem;
+}
+
+.lift-animation {
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.322);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 3rem;
+  }
+  
+  .lift-animation::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.322);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .lift-animation:hover {
+    box-shadow: 1.5rem 1.5rem 1.5rem rgba(0, 0, 0, 0.377);
+    -webkit-transform: scale(1.03, 1.03);
+    transform: scale(1.03, 1.03);
+  }
+  
+  .lift-animation:hover::after {
+    opacity: 1;
+  }
+  
+  h5 {
+    font-size: 3rem;
+    font-family: Noto Sans JP, sans-serif;
+  }
+  
+  /* Responsive Adjustments */
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.8rem;
+      margin: 0 1rem 0 1rem;
+    }
+    
+    .subtitle {
+      font-size: 1.4rem;
+      margin: 0 1rem 0 1rem;
+    }
+    
+    #tribute-info{
+        margin: 0 3rem 0 3rem;
+    }
+    
+    h2 {
+      font-size: 2.5rem;
+      margin: 2rem 0 1rem 0;
+    }
+    
+    h3 {
+      font-size: 2rem;
+      margin: 2rem 0 1rem 0;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+    
+    h5{
+        font-size: 2rem;
+    }
+
+    #image {
+      height: auto;
+      max-height: 34rem;
+      border-radius: 1.5rem;
+    }
+
+    #img-caption{
+        font-size: 1.4rem;
+    }
+    
+    .source-image {
+      width: 15rem;
+      height: 7.5rem;
+      border-radius: 1rem;
+      margin: 0.5rem 0.5rem 3rem 0.5rem;
+    }
+    
+    blockquote {
+      font-size: 1.8rem;
+      margin: 2rem 5% 0 5%;
+      padding: 1rem 0 1.5rem 0;
+      border-radius: 1.5rem;
+    }
+    
+    cite {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 6.5rem;
+    }
+    
+    .subtitle {
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      font-size: 4rem;
+      margin: 7rem 0 3.5rem 0;
+    }
+    
+    h3 {
+      font-size: 2.8rem;
+      margin: 4rem 0 2.5rem 0;
+    }
+    
+    #image {
+        height: 50rem;
+        border-radius: 3rem;
+      }
+      
+      .source-image {
+        width: 25rem;
+        height: 12.5rem;
+        border-radius: 1.8rem;
+        margin: 0.75rem 1rem 5rem 1rem;
+      }
+      
+      blockquote {
+        font-size: 2.5rem;
+        margin: 4rem 5% 0 5%;
+        padding: 1.5rem 0% 2.5rem 0%;
+        border-radius: 3rem;
+      }
+      
+      cite {
+        font-size: 1.8rem;
+      }
+    }
