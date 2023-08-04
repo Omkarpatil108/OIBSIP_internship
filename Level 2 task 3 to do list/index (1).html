@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h5>To-Do List</h5>
+    <div class="to-do">
+      <h2>To-Do List<img src="images/icon.png" alt="to do icon"></h2>
+      <div class="row">
+        <input type="text" id="input-box" placeholder="Add your task">
+        <button id="addBtn" onclick="addTask()">Add</button>
+      </div>
+      <div id="list-container">
+        <h3>Pending Tasks</h3>
+        <ul id="pending-list"></ul>
+
+        <h3>Completed Tasks</h3>
+        <ul id="completed-list"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
